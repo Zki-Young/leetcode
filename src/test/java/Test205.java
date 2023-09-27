@@ -3,7 +3,7 @@ import org.junit.Test;
 import java.util.*;
 
 /**
- * @Description: TODO
+ * @Description: 同构字符串
  * @Auther: Zki Young
  * @Date: 2023/9/27 14:08
  * @company：CTTIC
