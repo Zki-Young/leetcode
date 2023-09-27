@@ -14,16 +14,9 @@ public class Test205 {
         isIsomorphic("abcdefghijklmnopqrstuvwxyzva", "abcdefghijklmnopqrstuvwxyzck");
     }
 
-    public boolean isIsomorphic(String s, String t) {
+    public void isIsomorphic(String s, String t) {
         System.out.println(getCode(s));
         System.out.println(getCode(t));
-        if(s.length() != t.length()){
-            return false;
-        }
-        if(getCode(s).equals(getCode(t))){
-            return true;
-        }
-        return false;
     }
 
     public String getCode(String string){
