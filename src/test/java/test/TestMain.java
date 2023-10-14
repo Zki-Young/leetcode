@@ -5,8 +5,13 @@ import org.junit.Test;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 import java.util.Arrays;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @Description: TODO
@@ -15,19 +20,50 @@ import java.util.Arrays;
  * @company：CTTIC
  */
 public class TestMain {
+
     @Test
     public void testMain(){
-        int [] ints = new int[]{1, 2, 3};
-        System.out.println(Arrays.toString(ints));
-
-        testArray(ints);
-        System.out.println(Arrays.toString(ints));
+        System.out.println("hello");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("world");
     }
+
+    public int test(int a){
+        try {
+            if (a == 0){
+                System.out.println("123");
+                return 0;
+            } else {
+                System.out.println("456");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("finally");
+        }
+        return 0;
+    }
+
+
+
+
+
     public void testArray(int [] ints){
         ints[0] = 100;
     }
     @Test
     public void test(){
+        SimpleDateFormat simpleDateFormat;
+        DateTimeFormatter dateTimeFormatter;
+        ConcurrentHashMap<Integer, Integer> concurrentHashMap;
+        Hashtable<Integer, IInterface> hashtable;
+
+//        int implements = 1;
+
 //        double d01 = 123456789012;
         double d02 = 123456789012d;
 

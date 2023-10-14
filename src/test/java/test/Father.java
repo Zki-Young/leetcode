@@ -31,3 +31,7 @@ public class Father {
         System.out.println("子类不去重写的父类private方法");
     }
 }
+
+class Moon{
+
+}
