@@ -1,16 +1,12 @@
 package test;
 
-import cn.hutool.core.lang.copier.Copier;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
-import java.util.Arrays;
 import java.util.Hashtable;
-import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -23,13 +19,19 @@ public class TestMain {
 
     @Test
     public void testMain(){
-        System.out.println("hello");
         try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
+            System.out.println("hello");
+            for (int i = 1; i <= 3; i++) {
+                System.out.println(i);
+                Thread.sleep(1000);
+            }
+            throw new RuntimeException();
+        } catch (Exception e) {
+            System.out.println("捕捉到异常");
             e.printStackTrace();
+        }finally {
+            System.out.println("world");
         }
-        System.out.println("world");
     }
 
     public int test(int a){

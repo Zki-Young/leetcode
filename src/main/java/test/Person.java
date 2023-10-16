@@ -7,6 +7,8 @@ package test;
  * @company：CTTIC
  */
 public class Person {
-    private static class Head{}
+    private static class Head{
+
+    }
 
 }
