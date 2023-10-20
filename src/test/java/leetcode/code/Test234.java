@@ -1,4 +1,4 @@
-package leetcode.easy;
+package leetcode.code;
 
 import leetcode.domain.ListNode;
 import org.junit.Test;

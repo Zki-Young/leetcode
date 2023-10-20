@@ -1,4 +1,4 @@
-package leetcode.easy;
+package leetcode.code;
 
 /**
  * @Description: 226. 翻转二叉树
