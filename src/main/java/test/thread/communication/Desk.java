@@ -1,5 +1,6 @@
 package test.thread.communication;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,9 +9,9 @@ import java.util.List;
  * @Auther: Zki Young
  * @Date: 2023/10/15 12:42
  */
-public class Desk {
+public class Desk implements Serializable {
     List<String> list = new ArrayList<>();
-
+    private int a;
     public synchronized void make() {
         try {
             String name = Thread.currentThread().getName();
@@ -21,6 +22,7 @@ public class Desk {
                 System.out.println("桌子上有包子，" + name + "看了一眼桌子走了");
             }
             Thread.sleep(1000);
+            System.out.println("abc".equals("abc"));
             this.notify();
             this.wait();
         } catch (InterruptedException e) {
